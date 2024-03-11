@@ -1,3 +1,5 @@
+# Generate, Detect, Remove
+
 # ✍️ The Stable Signature: Rooting Watermarks in Latent Diffusion Models
 
 Implementation and pretrained models.
