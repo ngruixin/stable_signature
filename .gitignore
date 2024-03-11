@@ -1,0 +1,8 @@
+**/*.png
+**/*.pth
+.ipynb_checkpoints/
+__pycache__/
+models/
+sd/
+old-keys/
+data/
