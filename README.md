@@ -5,10 +5,13 @@
 Implementation and pretrained models.
 For details, see [**the paper**](https://arxiv.org/abs/2303.15435) (or go to ICCV 2023 in Paris 🥐).  
 
+![stable signature](./images/stable-signature.png)
+
 [[`Webpage`](https://pierrefdz.github.io/publications/stablesignature/)]
 [[`arXiv`](https://arxiv.org/abs/2303.15435)]
 [[`Blog`](https://ai.meta.com/blog/stable-signature-watermarking-generative-ai/)]
 [[`Demo`](https://huggingface.co/spaces/imatag/stable-signature-bzh)]
+
 
 ## Setup 
 
@@ -83,7 +86,7 @@ Currently, the model achieves 90.7% accuracy and an f1-score of 0.927 on the val
 
 ### Watermark Remover 
 The watermark remover was trained to remove watermarks from a given image by finetuning the LDM decoder.
-It is trained to minimize perceptual loss and classification loss of the watermark classifier (expected label set as non-watermarked). 
+It is trained to minimize perceptual loss and classification loss of the watermark classifier (ground truth label set as non-watermarked). 
 
 Train dataset consists of:
 * pairs of non-watermarked and watermarked images augmented with transformations
@@ -91,9 +94,13 @@ Train dataset consists of:
 Refer to the section on "Watermark Remover" in `decoding.ipynb` for the code used for training. 
 Currently, the model achieves % accuracy in removing watermarks (as determined by the watermark classifier). The images generated
 after training on 8300 images are shown below: 
-![Original](./images/8300_train_orig.png)
-![Watermarked](./images/8300_train_w.png)
-![Removed Watermark](./images/8300_train_removed.png)
+| ![Original](./images/8300_train_orig.png) |
+|:--:| 
+| *Original image* |
+| ![Watermarked](./images/8300_train_w.png) |
+| *Watermarked image* |
+| ![Removed Watermark](./images/8300_train_removed.png) |
+| *Image after watermark removal* |
 
 ## Acknowledgements
 
