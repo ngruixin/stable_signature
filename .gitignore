@@ -1,8 +1,9 @@
 **/*.png
+!images/  # except for image dir
 **/*.pth
 .ipynb_checkpoints/
 __pycache__/
 models/
 sd/
-old-keys/
+keys/
 data/
