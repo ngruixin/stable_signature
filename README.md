@@ -79,7 +79,7 @@ Train dataset (33000 images) consists of:
 Refer to the section on "Generate Watermarked Images" in `decoding.ipynb` for the code used to generate the train/validation datasets. 
 
 Refer to the section on "Watermark Detector" in `decoding.ipynb` for the code used for training. 
-Currently, the model achieves % accuracy and an f1-score of X on the validation set of 1000 images when trained for 1 epoch.
+Currently, the model achieves 90.7% accuracy and an f1-score of 0.927 on the validation set of 1000 images when trained for 1 epoch.
 
 ### Watermark Remover 
 The watermark remover was trained to remove watermarks from a given image by finetuning the LDM decoder.
@@ -94,7 +94,6 @@ after training on 8300 images are shown below:
 ![Original](./images/8300_train_orig.png)
 ![Watermarked](./images/8300_train_w.png)
 ![Removed Watermark](./images/8300_train_removed.png)
-
 
 ## Acknowledgements
 
