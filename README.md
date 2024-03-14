@@ -92,7 +92,7 @@ Train dataset consists of:
 * pairs of non-watermarked and watermarked images augmented with transformations
 
 Refer to the section on "Watermark Remover" in `decoding.ipynb` for the code used for training. 
-Currently, the model achieves % accuracy in removing watermarks (as determined by the watermark classifier). The images generated
+Currently, the model achieves 99.9% accuracy in removing watermarks (as determined by the watermark classifier). The images generated
 after training on 8300 images are shown below: 
 | ![Original](./images/8300_train_orig.png) |
 |:--:| 
