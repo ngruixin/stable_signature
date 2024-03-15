@@ -68,7 +68,7 @@ Use about 500 images from the COCO dataset to train watermark generators. (Repea
 mkdir keys
 python finetune_ldm_decoder.py --train_dir data/train --val_dir data/val --batch_size 1 --output_dir keys/keyX --seed X
 ```
-Keys 0-10 are used to generate the train set, while keys 11-20 are used to generate the validation set.
+Keys 1-10 are used to generate the train set, while keys 11-20 are used to generate the validation set.
 
 ### Watermark Classifier
 The watermark classifier was trained to detect if a given image has a 48-bit watermark that was generated using Stable Signature. 
