@@ -86,6 +86,10 @@ Currently, the model achieves 90.7% accuracy and an f1-score of 0.927 on the val
 
 You may download the pretrained model [here](https://drive.google.com/file/d/1rLX_MEQP6hODbEq09dVkPL_8VMdGPNf-/view?usp=sharing).
 
+A classifier was also trained to detect Meta AI generated images. This was achieved by finetuning a 64-bit watermark extractor model. 
+Refer to `meta-classifier.ipynb` for training details. 
+You may download the pretrained model [here](https://drive.google.com/file/d/1dG-LUMb4OisV3hwweCZOp-optRjeRKZK/view?usp=sharing).
+
 ### Watermark Remover 
 The watermark remover was trained to remove watermarks from a given image by finetuning the LDM decoder.
 It is trained to minimize perceptual loss and classification loss of the watermark classifier (ground truth label set as non-watermarked). 
