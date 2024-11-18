@@ -41,7 +41,7 @@ Download the stable diffusion model:
 ```cmd
 mkdir sd
 wget https://raw.githubusercontent.com/Stability-AI/stablediffusion/refs/heads/main/configs/stable-diffusion/v2-inference.yaml -P sd/
-wget https://huggingface.co/stabilityai/stable-diffusion-2-1-base/blob/main/v2-1_512-ema-pruned.ckpt -P sd/
+wget https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.ckpt -P sd/
 ```
 #### Perceptual Losses
 
